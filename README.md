@@ -35,6 +35,12 @@ Les plantes sont une liste [] d'objets {}. Chaque objet plante doit posséder 2 
 ```
 **yesQuestion** est la liste pour la plante considéré, des questions auxquelles on répond par "oui". Soyez exhaustifs. Pour chaque plante, regardez soigneusement la liste des questions, prenez toutes celles dont la réponse est positive.
 
+## Fonctionnement de gitHub
+### 1- Le wiki   
+L'onglet **wiki** cache des articles qui peuvent vous aider.   
+### 2- gh-pages   
+Le projet est visible [ici](https://svconvert.github.io/plankinator/)   
+
 ## Améliorations à prévoir
 - Un peu plus de styles, arranger les boutons, changer les images
 - Amélioration de l'algorithme avec un niveau pour les questions de très discriminantes à plus générales ?
