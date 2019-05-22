@@ -38,6 +38,7 @@ Les plantes sont une liste [] d'objets {}. Chaque objet plante doit posséder 2 
 ## Fonctionnement de gitHub
 ### 1- Le wiki   
 L'onglet **wiki** cache des articles qui peuvent vous aider.   
+[wiki](https://github.com/svconvert/plankinator/wiki)
 ### 2- gh-pages   
 Le projet est visible [ici](https://svconvert.github.io/plankinator/)   
 
