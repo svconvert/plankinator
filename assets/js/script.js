@@ -6,10 +6,6 @@ let plantesAcceptables = [];
 // Numéro de la dernière question posée
 let questionEnCours = -1;
 
-function sam(humeur) {
-    console.log("Sam est " + humeur + " aujourd'hui");
-}
-
 // Fonction lancée lors du clic sur l'image d'accueil (Sans paramètre)
 // Et relancée à chaque itération avec la liste des plantes retenues en paramètre.
 function runPlankinator(plantesRetenues = []) {
@@ -48,9 +44,6 @@ function runPlankinator(plantesRetenues = []) {
     document.getElementById("textQuestion").innerHTML = questionsNonPosees[numeroQuestionEnCours].intitule;
     // Enregistrer la question en cours
     questionEnCours = questionsNonPosees[numeroQuestionEnCours].numero;
-    console.dir(plantesAcceptables);
-    console.dir(questionsNonPosees);
-    console.log(questionEnCours);
 }
 
 // Fonction appelée lorsqu'on sélectionne un bouton radio. 
