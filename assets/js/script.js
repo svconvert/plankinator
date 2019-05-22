@@ -6,9 +6,13 @@ let plantesAcceptables = [];
 // Numéro de la dernière question posée
 let questionEnCours = -1;
 
+function sam(humeur) {
+    console.log("Sam est " + humeur + " aujourd'hui");
+}
+
 // Fonction lancée lors du clic sur l'image d'accueil (Sans paramètre)
 // Et relancée à chaque itération avec la liste des plantes retenues en paramètre.
-function runPlankenathon(plantesRetenues = []) {
+function runPlankinator(plantesRetenues = []) {
 
     // Première itération : on vient de cliquer sur l'image d'accueil
     if (plantesRetenues.length == 0) {
@@ -32,10 +36,10 @@ function runPlankenathon(plantesRetenues = []) {
             }
         }
         questionsNonPosees = temp;
+        
+        // Décocher les boutons radio
+        reinitRadio();
     }
-
-    // Décocher les boutons radio
-    reinitRadio();
 
     // Sélectionner aléatoirement une nouvelle question
     let numeroQuestionEnCours = getRandomInt(questionsNonPosees.length);
@@ -44,6 +48,9 @@ function runPlankenathon(plantesRetenues = []) {
     document.getElementById("textQuestion").innerHTML = questionsNonPosees[numeroQuestionEnCours].intitule;
     // Enregistrer la question en cours
     questionEnCours = questionsNonPosees[numeroQuestionEnCours].numero;
+    console.dir(plantesAcceptables);
+    console.dir(questionsNonPosees);
+    console.log(questionEnCours);
 }
 
 // Fonction appelée lorsqu'on sélectionne un bouton radio. 
@@ -72,7 +79,7 @@ function traiteReponse(reponse) {
         // Si temp contient plus d'une plante, on relance la processus
     } else {
         plantesAcceptables = temp;
-        runPlankenathon(plantesAcceptables);
+        runPlankinator(plantesAcceptables);
     }
 }
 

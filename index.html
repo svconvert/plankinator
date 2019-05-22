@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- TITRE -->
-        <title>Plankénathor</title>
+        <title>Plankinator</title>
         <!-- ICONE -->
         <link rel="icon" type="image/ico" href="favicon.ico" />
         <!-- IMPORT DU FICHIER DE STYLES -->
@@ -10,7 +10,12 @@
     </head>
 <body>
 
-    <h1>Plankénathor</h1>
+    <h1>Plankinator</h1>
+    <form>
+        De quelle humeur est Sam aujourd'hui ?
+        <input type="text" id="humeurSam">
+        <button onClick="sam('enrhumé')">Test</button>
+    </form>
     <hr>
         
     <div id = "ecranTrouve" class="cache centrer">
@@ -19,7 +24,7 @@
         <button onClick="recommencer()" class="button">Rejouer</button>
     </div>
 
-    <div id = "ecranAccueil" onclick="runPlankenathon()" class="centrer">
+    <div id = "ecranAccueil" onclick="runPlankinator()" class="centrer">
         <img src="assets/img/accueil.png">
     </div>
 
@@ -28,8 +33,8 @@
 
         <form id="Formulaire">
             <div name="reponse" id="reponse">
-                <input type="radio" name="radioReponse" value="vrai" onClick="traiteReponse(1)"> Vrai<br>
-                <input type="radio" name="radioReponse" value="faux" onClick="traiteReponse(0)"> Faux<br>
+                <input type="radio" name="radioReponse" value="vrai" onClick="traiteReponse(1)"> Oui<br>
+                <input type="radio" name="radioReponse" value="faux" onClick="traiteReponse(0)"> Non<br>
             </div>
         </form>
     </div>

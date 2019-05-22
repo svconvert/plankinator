@@ -12,7 +12,7 @@ let plantes = [
             "yesQuestions": [4, 7] 
         },
         { 
-            "name": "plante carnivore vivace",
+            "name": "plante moche vivace",
             "yesQuestions": [5, 7] 
         },
         { 

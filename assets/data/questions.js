@@ -17,7 +17,7 @@ let questions = [
         },
         { 
             "numero": 5,
-            "intitule": "La plante est-elle carnivore ?" 
+            "intitule": "La plante est-elle moche ?" 
         },
         { 
             "numero": 6,
