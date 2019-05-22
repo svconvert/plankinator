@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <!-- TITRE -->
+        <title>Plankénathor</title>
+        <!-- ICONE -->
+        <link rel="icon" type="image/ico" href="favicon.ico" />
+        <!-- IMPORT DU FICHIER DE STYLES -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+<body>
+
+    <h1>Plankénathor</h1>
+    <hr>
+        
+    <div id = "ecranTrouve" class="cache centrer">
+        <img src="assets/img/bravo.png"><br>
+        <div id="textBravo"></div>
+        <button onClick="recommencer()" class="button">Rejouer</button>
+    </div>
+
+    <div id = "ecranAccueil" onclick="runPlankenathon()" class="centrer">
+        <img src="assets/img/accueil.png">
+    </div>
+
+    <div id = "ecranQuestions" class="cache">
+        <div name="question" id="textQuestion" class="centrer"></div>
+
+        <form id="Formulaire">
+            <div name="reponse" id="reponse">
+                <input type="radio" name="radioReponse" value="vrai" onClick="traiteReponse(1)"> Vrai<br>
+                <input type="radio" name="radioReponse" value="faux" onClick="traiteReponse(0)"> Faux<br>
+            </div>
+        </form>
+    </div>
+
+    <!-- IMPORT DES PLANTES ET QUESTIONS -->
+    <script type="text/javascript" src="assets/data/plantes.js"></script>
+    <script type="text/javascript" src="assets/data/questions.js"></script>
+    <!-- IMPORT DE L'ALGORITHME -->
+    <script language="javascript" src="assets/js/script.js"></script>
+</body>
+</html>
